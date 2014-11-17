@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<script>
+    function myFunction( city )
+    {
+        var correctMessage = "Correct";
+        var wrongMessage   = "Wrong";
+        
+        if ( city == "Austin" )
+        {
+            document.getElementById("demo").innerHTML = correctMessage;
+	
+        }
+        else
+        {
+           document.getElementById("demo").innerHTML = wrongMessage;
+           
+        }
+    }
+</script>
+
+</head>
+<body>
+
+<p>Quiz</p>
+
+<p id="demo">
+    What's the capitol of Texas?
+</p>
+
+<button type="button" onclick="myFunction('Dallas')">
+    Dallas
+</button>
+
+<button type="button" onclick="myFunction('Austin')">
+    Austin
+</button>
+
+<button type="button" onclick="myFunction('Houston')">
+    Houston
+</button>
+
+</body>
+</html>
